@@ -36,21 +36,21 @@
             <p>Try Your <span>FREE</span> Trial Today</p>
           </div>
           <div class="form">
-            <h4>Your details</h4>
+            <p>Your details</p>
             <form>
-              <input type="text" name="fname" placeholder="First name">
-              <input type="text" name="lname" placeholder="Last name">
-              <input type="text" name="phone" placeholder="Phone number">
+              <input type="text" name="fname" placeholder="First name" autocomplete="off" required>
+              <input type="text" name="lname" placeholder="Last name" autocomplete="off" required>
+              <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Phone number" autocomplete="off" required>
             </form>
             <div class="subscirption">
-              <h4>Type of subscirption</h4>
-              <input type="checkbox" name="Sutikimas" value="Sutinku">
+             <p>Type of subscirption</p>
+              <input type="radio" name="subscirption" value="monthly">
               <label for="monthly">Monthly</label>
-              <input type="checkbox" name="Sutikimas" value="Sutinku">
+              <input type="radio" name="subscirption" value="yearly">
               <label for="yearly">Yearly</label>
             </div>
             <div class="bottom">
-              <h1>GET STARTED</h1>
+            <p>GET STARTED</p>
             </div>
           </div>
         </div>
