@@ -433,12 +433,15 @@ main{
   }
 
 #pricing{
+  background: #6696E2;
 
   .pricing{
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #FFFFFF;
+    
 
     h1{
       justify-content: center;
@@ -446,7 +449,7 @@ main{
       font-size: 36px;
     }
     hr{
-      border: 1px solid #E27866;
+      border: 1px solid #41D395;
       width: 64px;
       margin: 30px;
     }
@@ -456,10 +459,10 @@ main{
 .prices{
 
   display: flex;
-  align-items: center;
   max-width: 100%;
-  height: 883px;
+  height: 683px;
   background: #6696E2;
+  
 
 }
   
@@ -471,8 +474,10 @@ main{
       flex-direction: column;
       justify-content: center;
       text-align: center;
-      margin: 12px;
+      margin: 30px;
       padding: 25px;
+      
+      
 
       
 
@@ -500,7 +505,7 @@ main{
           color: #FFFFFF;
           opacity: 0.5;
           font-size: 14px;
-          padding: 10px;
+          
         }
 
         span{
