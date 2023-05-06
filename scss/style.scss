@@ -573,6 +573,54 @@ main{
       gap: 50px;
       justify-content: center;
 
+      .first{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        max-width: 273px;
+        height: 147px;
+        background: #6696E2;
+        gap: 50px;
+        color: #FFFFFF;
+        font-size: 16px;
+        border-radius: 8px;
+        position: relative;
+
+        &::after{
+          content: "";
+          position: absolute;
+          border: 10px solid;
+          border-top-color: #6696E2;
+          bottom: -20px;
+          left: 25px;
+        }
+      }
+
+      .second{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        padding: 20px;
+        max-width: 273px;
+        height: 125px;
+        background: #6696E2;
+        gap: 50px;
+        color: #FFFFFF;
+        font-size: 16px;
+        border-radius: 8px;
+        position: relative;
+
+        &::after{
+          content: "";
+          position: absolute;
+          border: 10px solid;
+          border-top-color: #6696E2;
+          bottom: -20px;
+          left: 25px;
+          
+        }
+      }
+
     .Jeremy, .John, .Susan{
       display: flex;
       align-items: center;
@@ -593,7 +641,9 @@ main{
         img{
           width: 70px;
           height: 70px;
-          margin: 20px;
+          margin-right: 20px;
+          margin-left: -20px;
+          
         }
       }
     }
