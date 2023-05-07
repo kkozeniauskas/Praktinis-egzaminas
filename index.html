@@ -6,24 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Praktinis egzaminas</title>
   <link rel="icon" type="image/x-icon" href="app/images/gulp.svg">
-  <link rel="stylesheet" href="app/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="app/css/style.css">
+
 </head>
 <body>
   <nav class="navbar">
     <img src="app/images/Slogo.svg" alt="logo1">
     <ul>
-      <a href="#">Features</a>
-      <a href="#">About</a>
-      <a href="#">Pricing</a>
-      <a href="#">Reviews</a>
-      <a href="#">Contact</a>
+      <div class="links">
+        <a href="#">Features</a>
+        <a href="#">About</a>
+        <a href="#">Pricing</a>
+        <a href="#">Reviews</a>
+        <a href="#">Contact</a>
+      </div>
     </ul>
+    <i id="burger" class="fa-solid fa-bars"></i>
   </nav>
   <header>
     <div class="container">
 
-      <div class="right">
+      <div class="left">
         <img src="app/images/Llogo.svg" alt="logo2">
         <h1>Explained propriety of out perpetual to you</h1>
         <hr>
@@ -31,7 +36,7 @@
         <button>DOWNLOAD</button>
       </div>
 
-      <div class="left">
+      <div class="right">
         <div id="container">
           <div class="top">
             <p>Try Your <span>FREE</span> Trial Today</p>
@@ -89,8 +94,6 @@
        <p class="heading">Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</p> 
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. 
-          <br>
-          <br>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
         </p>
       </div>
@@ -188,7 +191,71 @@
   
   <div class="prices">
 
-    <div class="plan">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="plan">
+  
+            <div class="main">
+              <h2>Basic</h2>
+            <h1><span>$</span>0</h1>
+            <p>Free for Life</p>
+          </div>
+            <ul>
+              <li>1 GB OF SPACE</li>
+              <li>10 GB OF BANDWIDTH</li>
+              <li>3 WEBSITES</li>
+              <li>BASIC COSTOMIZATION</li>
+              <li>WORDPRESS INTEGRATION</li>
+              <li>EMAIL SUPPORT</li>
+            </ul>
+          </div>
+        
+          <div class="plan">
+        
+            <div class="main">
+              <h2>Professional</h2>
+            <h1> <span>$</span>19</h1>
+            <p>Monthly Payment</p>
+          </div>
+            <div class="popular">
+              OUR MOST POPULAR
+            </div>
+            <ul>
+              <li>5 GB OF SPACE</li>
+              <li>50 GB OF BANDWIDTH</li>
+              <li>12 WEBSITES</li>
+              <li>ADVANCED COSTOMIZATION</li>
+              <li>WORDPRESS INTEGRATION</li>
+              <li>EMAIL SUPPORT</li>
+            </ul>
+          </div>
+          
+        
+          <div class="plan">
+        
+            <div class="main">
+              <h2>Enterprise</h2>
+            <h1><span>$</span>70</h1>
+            <p>Monthly Paiment</p>
+            </div>
+            <ul>
+              <li>UNLIMITED SPACE</li>
+              <li>UNLIMITED BANDWIDTH</li>
+              <li>100 WEBSITES</li>
+              <li>ADVANCED COSTOMIZATION</li>
+              <li>WORDPRESS INTEGRATION</li>
+              <li>24/7 CUSTOMER SUPPORT</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- <div class="plan">
   
       <div class="main">
         <h2>Basic</h2>
@@ -241,7 +308,7 @@
         <li>WORDPRESS INTEGRATION</li>
         <li>24/7 CUSTOMER SUPPORT</li>
       </ul>
-    </div>
+    </div> -->
   
   </div>
 
@@ -340,7 +407,7 @@
 
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="gulpfile.js"></script>
 </body>
 </html>
