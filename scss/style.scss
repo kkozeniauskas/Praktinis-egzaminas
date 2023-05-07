@@ -66,6 +66,7 @@ header{
     background-position: center;
   }
   .right{
+
     color: #FFFFFF;
     img{
       width: 247px;
@@ -99,6 +100,12 @@ header{
       border: 2px solid #FFFFFF;
       color: #FFFFFF;
       cursor: pointer;
+      transition: 0.3s;
+
+      &:hover{
+        background: #FFFFFF;
+        color: #1C1C1C;
+      }
       
     }
   }
@@ -152,8 +159,8 @@ header{
 
       }
 
-      .subscirption {
-        input[type="radio"] {
+      .subscirption{
+        input[type="radio"]{
           appearance: none;
           width: 13px;
           height: 13px;
@@ -163,7 +170,7 @@ header{
           cursor: pointer;
           margin-right: 10px;
       
-          &:checked {
+          &:checked{
             background-color: #41D395;
             border-color: #41D395;
 
@@ -173,13 +180,13 @@ header{
           }
         }
       
-        label {
+        label{
           display: inline-block;
           font-size: 9px;
           cursor: pointer;
         }
 
-        input[type="radio"], label {
+        input[type="radio"], label{
           display: inline-block;
           vertical-align: middle;
         }
@@ -195,6 +202,13 @@ header{
         background: #41D395;
         border: none;
         cursor: pointer;
+        transition: 0.3s;
+
+        &:hover{
+          background: #E27866;
+          color: #FFFFFF;
+          font-weight: 700;
+        }
       }
     }
   }
@@ -226,6 +240,14 @@ header{
     margin-top: 20px;
     font-size: 30px;
     color: #E27866;
+    
+
+    &:hover{
+      background: #E27866;
+      color:#FFFFFF;
+      height: 40px;
+      border-radius: 4px;
+    }
 
   }
 }
@@ -252,6 +274,14 @@ aside{
       color: #FFFFFF;
       position: relative;
       cursor: pointer;
+      opacity: 0.5;
+      transition: 0.3s;
+      
+
+      &:hover{
+        background: #E27866;
+        opacity: 1;
+      }
       
       p{
         font-size: 14px;
@@ -288,19 +318,56 @@ aside{
       margin: 120px auto;
       margin-left: 50px;
 
+
+
+      .img-wrapper{
+        position: relative;
+        display: inline-block;
+      
+      
+      .overlay{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 5px;
+        left: 0;
+        right: 0;
+        bottom: 5px;
+        margin-bottom: 10px;
+        margin-left: 9px;
+        margin-right: 9px;
+        background-color: #E27866;
+        color: #FFFFFF;
+        font-size: 20px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        cursor: pointer;
+      
+      &:hover{
+        opacity: 0.5;
+      }
+    
+      }
+    }
+  }
+      
+
       img{
         width: 363px;
         height: 178px;
+        
       }
       .img{
         width: 180px;
         height: 168px;
+        position: relative;
       }
       
 
     }
   }
-}
+
 
 section{
   display: flex;
@@ -394,6 +461,10 @@ main{
       gap: 80px;
       margin: 80px 150px;
       padding: 40px;
+
+      .customize{
+        margin-bottom: 20px;
+      }
       
       
       i{
@@ -407,6 +478,10 @@ main{
         width: 50px;
         height: 50px;
         
+        &:hover{
+          background: #E27866;
+          color: #FFFFFF;
+        }
         
         
       
@@ -720,8 +795,8 @@ main{
 
       }
 
-      .subscirption {
-        input[type="radio"] {
+      .subscirption{
+        input[type="radio"]{
           appearance: none;
           width: 13px;
           height: 13px;
@@ -731,7 +806,7 @@ main{
           cursor: pointer;
           margin-right: 10px;
       
-          &:checked {
+          &:checked{
             background-color: #41D395;
             border-color: #41D395;
 
@@ -741,13 +816,13 @@ main{
           }
         }
       
-        label {
+        label{
           display: inline-block;
           font-size: 9px;
           cursor: pointer;
         }
 
-        input[type="radio"], label {
+        input[type="radio"], label{
           display: inline-block;
           vertical-align: middle;
         }
@@ -763,6 +838,14 @@ main{
         background: #41D395;
         border: none;
         cursor: pointer;
+        transition: 0.3s;
+
+        &:hover{
+          font-weight: 700;
+          background: #E27866;
+          color: #FFFFFF;
+        }
+        
       }
     }
   }
